@@ -1,0 +1,142 @@
+.header {
+  background-color: blueviolet;
+  padding: 0;
+  width: 100%;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.logo {
+  height: 50px; /* Adjusted logo size */
+}
+
+.headerInputContainer {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 8px;
+  margin: 0 16px;
+}
+
+.categorySelect {
+  width: 140px; /* Adjusted category button width */
+  margin-right: 8px; /* Space between category and search bar */
+}
+
+.categorySelect .MuiOutlinedInput-root {
+  border: 2px solid #333; /* Border for category select */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.categorySelect .MuiSelect-select {
+  padding: 8px; /* Padding inside category select */
+}
+
+.headerInput {
+  outline: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: white;
+  flex-grow: 1;
+  max-width: 400px; /* Increased search bar size */
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.headerBottomContainer {
+  background-color: rgb(152, 86, 215);
+  width: 100%;
+}
+
+.headerBottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.headerBottomText {
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px; /* Adjusted font size */
+  padding: 10px 0; /* Increased padding for better click area */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.headerBottomText:hover {
+  color: #f0f0f0; /* Light color on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Slight background change on hover */
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownMenu .headerBottomText {
+  padding: 10px 0;
+  border-bottom: 1px solid #555;
+}
+
+.dropdownMenu .headerBottomText:last-child {
+  border-bottom: none;
+}
+
+.drawerCloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.drawerCloseButton:hover {
+  background-color: #555;
+}
+
+.drawerContainer {
+  width: 250px; /* Adjust width as needed */
+}
+
+.dropdownMenu {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-left: 2px solid #333;
+}
+
+.dropdownMenu .MuiListItem-button {
+  padding-left: 20px; /* Indent items in the dropdown */
+}
+
+.dropdownMenu .MuiListItemText-primary {
+  font-size: 14px;
+}
+
+.dropdownMenu .MuiListItem-button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Hover effect for dropdown items */
+}
